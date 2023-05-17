@@ -1,0 +1,114 @@
+:root{
+    --bg-main: rgb(243, 237, 237);
+    --bg-text: rgb(235, 235, 243);
+    --bg-sub: black;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#alert{
+    background-color: var( --bg-sub);
+    color: var(--bg-text);
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 765px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+nav img{
+    width: 100px;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;  
+}
+nav li {
+    margin: 0.5em;
+}
+
+nav li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--bg-black);
+}
+
+.header_left, .header_right, .header_img{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    margin: auto;
+    flex-wrap: wrap;
+} 
+
+.header_img img{
+    margin: auto;
+    width: 50%;
+    max-width: 100px;
+}
+
+.header_right{
+    justify-content: flex-end;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.item_Detail{
+    border-top:  1px solid var(--bg-text);
+}
+
+.container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
