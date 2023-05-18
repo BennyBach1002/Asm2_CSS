@@ -25,7 +25,11 @@
     color: white
 }
 .section_padding{
+    border-top:  1px solid var(--bg-text);
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 80%;
+    margin: auto;
 }
 #alert{
     background-color: var( --bg-sub);
@@ -85,17 +89,11 @@ nav li a:hover{
     text-decoration: underline;
 }
 
-.item_Detail{
-    border-top:  1px solid var(--bg-text);
-}
 
 .main_item_section{
     display: flex;
     justify-content: space-between;
-    line-height: 35px;
-    border-top:  1px solid var(--bg-text);
-    width: 80%;
-    margin: auto;
+    line-height: 35px;  
 }
 
 .image_Container ,.details_Container{
@@ -121,4 +119,23 @@ nav li a:hover{
 
 .price h2{
     color: orangered;
+}
+
+.screen_size{
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
+}
+
+.size_Container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:30%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.size_Container p{
+    color: grey;
 }
