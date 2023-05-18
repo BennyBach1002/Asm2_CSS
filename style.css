@@ -1,18 +1,32 @@
 :root{
-    --bg-main: rgb(243, 237, 237);
+    --bg-main: rgb(82, 82, 82);
     --bg-text: rgb(235, 235, 243);
     --bg-sub: black;
-
+    --btn-blue: rgb(81, 81, 155);
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
-
-
+#btn{
+    font-size: 16px;
+    padding: 6px;
+    background-color: var(--btn-blue);
+    border-radius: 15%;
+    border-color: transparent;
+    color: var(--bg-text);
+}
+#btn:hover{
+    cursor: pointer;
+    color: white
+}
+.section_padding{
+    padding-top: 1.5rem;
+}
 #alert{
     background-color: var( --bg-sub);
     color: var(--bg-text);
@@ -75,40 +89,36 @@ nav li a:hover{
     border-top:  1px solid var(--bg-text);
 }
 
-.container{
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.main_item_section{
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    border-top:  1px solid var(--bg-text);
+    width: 80%;
+    margin: auto;
 }
 
-.container input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+.image_Container ,.details_Container{
+    width: 50vw;
 }
 
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+.details_Container{
+    font-size: large;
+}
+.quantity_Container{
+    line-height: 30px;
+    display: flex;
+}
+.quantity_Container #input_BOX{ 
+    padding: 10px;
+    text-align: center;
+    font-size: large;
 }
 
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
+.price h4{
+    text-decoration-line: line-through;
 }
 
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
+.price h2{
+    color: orangered;
+}
