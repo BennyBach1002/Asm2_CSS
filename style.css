@@ -1,7 +1,7 @@
 :root{
     --bg-main: rgb(82, 82, 82);
     --bg-text: rgb(235, 235, 243);
-    --bg-sub: black;
+    --bg-sub: rgb(16, 15, 15);
     --btn-blue: rgb(81, 81, 155);
 }
 
@@ -66,6 +66,7 @@ nav li a{
     text-decoration: none;
     color: var(--bg-black);
 }
+
 
 .header_left, .header_right, .header_img{
     display: flex;
@@ -139,3 +140,71 @@ nav li a:hover{
 .size_Container p{
     color: grey;
 }
+
+.guaranteed_Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.guaranteed_Container div{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.support_Details_Container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.support_Details_Container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.support_Details_Container div a{
+    color: grey;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    background-color: var(--bg-sub);
+    color:var(--bg-text) ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.orderF{
+    position: fixed;
+    bottom: 0;
+}
+.toTop{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 4em;
+    right: .5em;
+}
+
+.myOrder{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.myOrder table{
+    width: 70%;
+    border: 1px solid black;
+}
+.myOrder th,
+.myOrder td{
+    margin: auto;
+    border: 1px solid black;
+}
+
