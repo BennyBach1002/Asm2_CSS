@@ -5,101 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eShop</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="alert">WORLD WIDE SHIPPING!</p>
-    <nav class="page-width">
-        <ul class="header_left">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">CATALOG</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">TRACK ORDER</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-        <div class="header_img">
-            <img src="./img/ANIMURE-logo.png" alt="Logo">
-        </div>
-        <ul class="header_right">
-            <li><a href="#">SEARCH</a></li>
-            <li><a href="#">ORDER</a></li>
-        </ul>
-    </nav>
-    <section class="main_item_section section_padding">
-        <div class="image_Container">
-            <img src="img/product/ip1.jpg" alt="ipImg" id="main_img">
-        </div>
-        <div class="details_Container">
-            <h2>ApplePhoneXIV</h2>
-            <label for="colorBlack">
-                <input type="checkbox" checked>
-                <span>Black</span>
-            </label>
-            <label for="colorRed">
-                <input type="checkbox" disabled>
-                <span>Red</span>
-            </label>
-            <label for="colorYellow">
-                <input type="checkbox" disabled>
-                <span>Yellow</span>
-            </label>
-            <label for="colorBlue">
-                <input type="checkbox" disabled>
-                <span>Blue</span>
-            </label>
-            <div class="price">
-                <h4>$1099</h4>
-                <h2>$799</h2>
+    <section class="header_section">
+        <nav>
+            <a href="#" id="header_logo"><h3>Header Logo</h3></a>
+            <div class="header_Link">
+                <a href="#">header link one</a>
+                <a href="#">header link two</a>
+                <a href="#">header link three</a>
             </div>
-            <p>The ApplePhoneXIV 14 and the ApplePhoneXIV 14 Plus are Apple's "affordable" flagship ApplePhoneXIVs with pricing starting at $799 (after discount), and the devices are being sold alongside the more expensive ApplePhoneXIV 14 Pro and ApplePhoneXIV 14 Pro Max.
+        </nav>
+        <article class="hero_section">
+            <div class="details_Container">
+                <h1 id="hero-main-text">This website is awesome</h1>
+                <p id="hero-secondary-text">This website has some subtext that goes here under the main title It's a smaller font and the color is lower contrast</p>
+                <button id="btn_head">Sign Up</button>
+            </div>
+            <div class="image_Container">
+                <img src="img/product/iPhone-14-Pro-Max-PNG.png" alt="">
+            </div>
+        </article>
+    </section>
 
-                Apple did away with the "mini" ApplePhoneXIV in 2022, and the ApplePhoneXIV 14 models come in 6.1- and 6.7-inch sizes. The new 6.7-inch ApplePhoneXIV 14 is called the "ApplePhoneXIV 14 Plus," harkening back to the ApplePhoneXIV 8 and 8 Plus and prior generations. Apple's ApplePhoneXIV 14 models are identical in design to the ApplePhoneXIV 13 models, featuring flat edges, an aerospace-grade aluminum enclosure, and a glass back that enables wireless charging.
-                
-                The ApplePhoneXIV 14 models come in blue, purple, midnight, starlight, and (PRODUCT)RED, plus Apple added a new yellow color in March. Unlike the ApplePhoneXIV 14 Pro models, the ApplePhoneXIV 14 and 14 Plus continue to have a notch at the top of the display that houses the TrueDepth camera. Like the ApplePhoneXIV 13 models, the ApplePhoneXIV 14 and ApplePhoneXIV 14 Plus include Super Retina XDR OLED displays that support 1200 nits peak brightness, a 2,000,000:1 contrast ratio, Dolby Vision, and True Tone support for matching the white balance of the display to the lighting in the room.</p>
-            <h4>Quantity</h4>
-            <div class="quantity_Container">
-                <input type="number"  id="input_BOX" value="1">
-            </div>
-            
-            <button id="btn">Add To Cart</button>
+    <section class="blog_section">
+        <h2 id="header2">Some random information</h2>
+        <div class="guaranteed">
+            <article>
+                <img src="/img/Icon/free-delivery.png" alt="freeDeli">
+                <h6>Free Delivery</h6>
+            </article>
+            <article>
+                <img src="/img/Icon/refund.png" alt="ref">
+                <h6>Refund</h6>
+            </article>
+            <article>
+                <img src="/img/Icon/shield.png" alt="shield">
+                <h6>Quality</h6>
+            </article>
         </div>
     </section>
-    <section class="section_padding">
-        <h1>Screen</h1>
-        <div class="screen_size">
-            <div class="size_Container">
-                <img src="./img/ProSize/M.png" alt="M">
-                <h5>Super Retina XDR . Display</h5>
-                <h5>6.1-inch OLED full screen (diagonal)</h5>
-                <h5> Resolution of 2532x1170 pixels with a pixel density of 460 ppi</h5>
-                <p>The iPhone 14 screen has beautifully curved corners and fits into a standard rectangle. When measured in a standard rectangle, the screen size diagonally is 6.06 inches (actual display area is smaller).</p>
-            </div>
-            <div class="size_Container">
-                <img src="./img/ProSize/L.png" alt="L">
-                <h5>Super Retina XDR . Display</h5>
-                <h5>6.1-inch OLED full screen (diagonal)</h5>
-                <h5> Resolution of 2532x1170 pixels with a pixel density of 460 ppi</h5>
-                <p>The iPhone 14 screen has beautifully curved corners and fits into a standard rectangle. When measured in a standard rectangle, the screen size diagonally is 6.06 inches (actual display area is smaller).</p>
-            </div>
-        </div>
+    <section class="quote_Section">
+        <article class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptate voluptatibus sequi, dolorum dolorem animi non aliquid molestiae facilis ratione provident doloremque cum odit veritatis, aliquam vel ipsam reprehenderit assumenda.</p>
+            <p id="signature"><b>-Ben</b></p>
+        </article>
     </section>
-    <section class="section_padding">
-        <h1>Guaranteed</h1>
-        <div class="guaranteed_Container">
-            <div>
-                <img src="img/Icon/free-delivery.png" alt="fashShipping">
-                <h2>Fast Shipping</h2>
-            </div>
-            <div>
-                <img src="img/Icon/shield.png" alt="qualityChecked">
-                <h2>Quality Checked</h2>
-            </div>
-            <div>
-                <img src="img/Icon/refund.png" alt="refund">
-                <h2>Refund</h2>
-            </div>
+    <section class="button_section">
+        <div class="button_description">
+            <h4>Call to action! It's time!</h4>
+            <p>Sign up for our prodcut by clicking that button right over there!</p>
         </div>
+        <button id="btn_foot">Sign Up</button>
     </section>
+    <footer class="footer_section">
+        <h5>Copyright @</h5>
+    </footer>
 </body>
 </html>

@@ -1,141 +1,152 @@
 :root{
-    --bg-main: rgb(82, 82, 82);
-    --bg-text: rgb(235, 235, 243);
-    --bg-sub: black;
-    --btn-blue: rgb(81, 81, 155);
+    --btn-bg: #3882F6;
+    --hero-bg: #1F2937;
+    --hero-main: #F9FAF8;
+    --hero-secondary: #E5E7EB;
+    --header-logo: #F9FAF8;
+    --header-text: #1F2937;
+    --quote-bg: #E5E7EB;
+    --quote-text: #1F2937;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-#btn{
+#btn_head{
     font-size: 16px;
-    padding: 6px;
+    padding: 5px;
+    width: 100px;
     background-color: var(--btn-blue);
-    border-radius: 15%;
+    border-radius: 10px;
     border-color: transparent;
-    color: var(--bg-text);
+    background-color: var(--btn-bg);
+    color: var(--hero-main);
 }
 #btn:hover{
     cursor: pointer;
     color: white
 }
-.section_padding{
-    border-top:  1px solid var(--bg-text);
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    width: 80%;
-    margin: auto;
+.header_section{
+    display: flex;
+    flex-direction: column ;
+    background-color: var(--hero-bg);
+    padding: 0 20% 0 20% ;
 }
-#alert{
-    background-color: var( --bg-sub);
-    color: var(--bg-text);
-    text-align: center;
-    width: 100%;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1500px;
-    min-width: 765px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin: auto;
 }
-nav img{
-    width: 100px;
-    align-items: center;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;  
-}
-nav li {
-    margin: 0.5em;
-}
-
-nav li a{
-    display: inline-block;
+nav a{
+    padding: 1rem;
+    color: var(--hero-secondary);
     text-decoration: none;
-    color: var(--bg-black);
 }
-
-.header_left, .header_right, .header_img{
-    display: flex;
-    align-items: center;
-    width: 33%;
-    margin: auto;
-    flex-wrap: wrap;
-} 
-
-.header_img img{
-    margin: auto;
-    width: 50%;
-    max-width: 100px;
+.header_Link{
+    align-self: center;
+    text-decoration: none;
 }
-
-.header_right{
-    justify-content: flex-end;
+#header_logo{
+    color: var(--header-logo);
 }
-
-nav li a:hover{
+nav a:hover{
     text-decoration: underline;
 }
 
-
-.main_item_section{
+.hero_section{
     display: flex;
     justify-content: space-between;
-    line-height: 35px;  
+    padding: 5% 0;
+    flex-wrap: nowrap;
 }
 
-.image_Container ,.details_Container{
-    width: 50vw;
+#hero-main-text{
+    color: var(--hero-main);
+    font-size: 48px;
+    font-weight:extra bold;
+    
 }
-
+#hero-secondary-text{
+    font-size: 18px;
+    color: var(--hero-secondary);
+}
 .details_Container{
-    font-size: large;
+    align-self: center;
 }
-.quantity_Container{
-    line-height: 30px;
-    display: flex;
-}
-.quantity_Container #input_BOX{ 
-    padding: 10px;
+.image_Container{
     text-align: center;
-    font-size: large;
+    width: 300px;
+    text-align: center;
+    /* background-color: blue; */
+    align-self: center;
 }
 
-.price h4{
-    text-decoration-line: line-through;
+.image_Container img {
+    width: 100%;
 }
-
-.price h2{
-    color: orangered;
+#header2{
+    text-align: center;
 }
-
-.screen_size{
+.blog_section{
     display: flex;
-    justify-content:space-around;
-    align-items: baseline;
-}
-
-.size_Container{
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    width:30%;
-    line-height: 30px;
-    text-align: center;
+
 }
 
-.size_Container p{
-    color: grey;
+.blog_section article h6{
+    color: var(--header-text);
+    font-size: 36px ;
+}
+.blog_section article img{
+    width: 150px;
+    border: 4px solid var(--btn-bg);
+    border-radius: 10px;
+}
+.guaranteed{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    text-align: center;
+}
+.quote_Section{
+    background-color: var(--quote-bg);
+    color: var(--quote-text);
+}
+.quote_Section{
+    padding: 100px;
+}
+.quote{
+    margin: 0 25% 0 25%;
+}
+#signature{
+    text-align: end;
+}
+
+.button_section{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--btn-bg);
+    color: var(--hero-main);
+    border-radius: 10px;
+    margin: 4rem;
+    padding: 3rem;
+}
+
+#btn_foot{
+    color: var(--hero-main);
+    background-color: transparent;
+    border: 1px solid var(--header-logo);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer_section{
+    background-color: var(--hero-bg);
+    color: var(--hero-main);
+    padding: 2rem;
+    text-align: center;
 }
